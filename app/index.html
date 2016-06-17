@@ -28,18 +28,8 @@
 
 <body class="container">
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" ng-href="#">Sample Project</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a ui-sref="home">Home</a></li>
-                <li><a ui-sref="about">About us</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div ui-view></div>
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
 
     <!-- Vendor libraries Mandatory -->
     <script src="scripts/libs/angular.min.js"></script>
@@ -52,6 +42,8 @@
     <script src="scripts/app.module.js"></script>
     <script src="scripts/app.config.js"></script>
     <script src="scripts/app.run.js"></script>
+    <script src="scripts/factories/activeTabfactory.js"></script>
+    <script src="scripts/controllers/headerCtrl.js"></script>
     <script src="scripts/controllers/aboutCtrl.js"></script>
     <script src="scripts/controllers/homeCtrl.js"></script>
 </body>

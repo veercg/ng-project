@@ -10,7 +10,7 @@
     /* @ngInject */
     function Controller($scope) {
         var vm = this;
-        vm.message = "This is a made with love.";
+        vm.message = "This is about you page.";
 
     }
 })();

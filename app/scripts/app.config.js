@@ -12,18 +12,32 @@
         $urlRouterProvider.otherwise("/")
 
         $stateProvider
-            .state('home', {
-                url: "/",
-                templateUrl: "./views/home.html",
-                controller:'homeCtrl',
-                controllerAs: 'vm'
-            })
-            .state('about', {
-                url: "/about",
-                templateUrl: "./views/about.html",
-                controller:'aboutCtrl',
-                controllerAs: 'vm'
-            });
+          .state('home',{
+            url: "/",
+            views: {
+              'header': {
+                templateUrl: './views/partials/header.html',
+                controller: 'headerCtrl as vm'
+              },
+              'content': {
+                templateUrl: './views/home.html',
+                controller:'homeCtrl as vm'
+              }
+            }
+          })
+          .state('about',{
+            url: "/about",
+            views: {
+              'header': {
+                templateUrl: './views/partials/header.html',
+                controller: 'headerCtrl as vm'
+              },
+              'content': {
+                templateUrl: './views/about.html',
+                controller:'aboutCtrl as vm'
+              }
+            }
+          });
 
     }
 })();
