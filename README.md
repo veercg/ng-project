@@ -1,1 +1,1 @@
-# Angular Boilerplate built for smaller Apps
+# ng-Project : Angular boilerplate to start a new project.
