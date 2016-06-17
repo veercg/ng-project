@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sample Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sampleApp.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" ng-href="#/">Sample Project</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a ng-href="#/">Home</a></li>
+                <li><a ng-href="#/about">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div ui-view></div>
+
+    <!-- Vendor libraries Mandatory -->
+    <script src="scripts/libs/angular.min.js"></script>
+    <script src="scripts/libs/angular-ui-router.min.js"></script>
+    <!-- Vendor libraries Optionals -->
+    <script src="scripts/libs/jquery.min.js"></script>
+    <script src="scripts/libs/underscore-min.js"></script>
+
+    <!-- Application specific files -->
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/app.config.js"></script>
+    <script src="scripts/app.run.js"></script>
+    <script src="scripts/controllers/aboutCtrl.js"></script>
+    <script src="scripts/controllers/homeCtrl.js"></script>
+</body>
+
+</html>
