@@ -9,6 +9,7 @@
 
     /* @ngInject */
     function factory($rootScope) {
+
         var headerTabs = {active: 'home'};
         var service = {
             headerTabs: headerTabs,

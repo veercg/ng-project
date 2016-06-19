@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" ng-href="#" ng-bind="vm.title"></a>
+            <a class="navbar-brand" ui-sref="home" ng-click="vm.setSelectedTab('home')" ng-bind="vm.title"></a>
         </div>
         <ul class="nav navbar-nav">
             <li ng-class="{'active':vm.selectedTab=='home'}" ng-click="vm.setSelectedTab('home')"><a ui-sref="home">Home</a></li>
